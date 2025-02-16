@@ -1,0 +1,25 @@
+{
+  "name": "Links & Words (React + Vite)",
+  "description": "Counts words in a page & highlights all links using React + Vite.",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["contentScript.js"]
+    }
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ]
+}
