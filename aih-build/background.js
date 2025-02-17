@@ -1,0 +1,1 @@
+chrome.runtime.onInstalled.addListener(()=>{console.log("AIH Extension installed or updated.")});chrome.action.onClicked.addListener(async e=>{e.id&&await chrome.scripting.executeScript({target:{tabId:e.id},files:["contentScript.js"]})});

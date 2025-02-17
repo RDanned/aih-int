@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Links&Words",
+  "version": "1.0",
+  "description": "Links & words counter and highlighter",
+  "permissions": ["scripting", "activeTab"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "service_worker.js"
+  },
+  "action": {
+    "default_title": "Toggle Sidebar"
+  }
+}
